@@ -16,6 +16,11 @@ public:
 	static constexpr int kPlayerGraphicSizeX = 32;
 	static constexpr int kPlayerGraphicSizeY = 32;
 
+	// プレイヤーの向き変更
+	static constexpr int kOrientationChangeUp = 9;
+	static constexpr int kOrientationChangeLeft = 3;
+	static constexpr int kOrientationChangeRight = 6;
+
 	Player();
 	virtual ~Player();
 
@@ -41,4 +46,5 @@ private:
 	// キャラクターのアニメーション
 	int m_animeNo;	// 表示する番号
 	int m_animeFrame;
+	int m_dirNo;
 };
