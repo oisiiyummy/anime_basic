@@ -23,6 +23,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	SceneMain scene;
 
+	// aaa
+
 	// データのロード
 	scene.init();
 
