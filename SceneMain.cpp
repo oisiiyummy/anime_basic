@@ -36,7 +36,10 @@ void SceneMain::init()
 		kPlayerGraphicDivX, kPlayerGraphicDivY,
 		kPlayerGraphicSizeX, kPlayerGraphicSizeY, m_hPlayerGraphic);
 	
-	m_player.setHandle(m_hPlayerGraphic[1]);
+	for (int i = 0; i < kPlayerGraphicDivNum; i++)
+	{
+	m_player.setHandle(i,m_hPlayerGraphic[i]);
+	}
 	m_player.init();
 }
 
